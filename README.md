@@ -20,3 +20,22 @@ TesntNG
    b. @BeforeTest & @AfterTest -> Test level method execution
    c. @BeforeMethod & @AfterMethod -> Class level method execution. For every method in a class, the pre/post calls can be made
    d. @BeforeClass & @AfterClass -> Class level method execution. a call at beginning and a call at end of a class
+
+4. Groups
+   a. App group tag to test method. 
+      eg @Test(group="smoke") 
+   b. Update the xml to run only methods marked with group tag
+      eg: 
+      <suite name="RegressionSuite">
+        <test  name="AllTest">
+            <groups>
+    	         <run>
+    		         <include name="smoke"/>
+    	         </run>
+            </groups>
+            <classes>
+               <class name="test.jdbasics"/>
+               <class name="test.sizebasics"/>
+            </classes>
+        </test>
+      </suite> 
