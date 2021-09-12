@@ -39,3 +39,11 @@ TesntNG
             </classes>
         </test>
       </suite> 
+
+5. Annotations Helper Attributes
+   1. dependsOnMethod - To execute another methods before current method.
+      eg: @Test(dependsOnMethods= {"Demo1"})  
+   2. enbaled - This attrib can let TestNG know whether to run to skip a method
+      eg: @Test(enabled=false)
+   4. timeOut - To set explicitly some time before a method fails
+      eg: timeOut=4000 - a method wont fail before 4 seconds
