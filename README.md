@@ -1,4 +1,4 @@
-TesnNG
+TesntNG
 
 1. Setting up TestNG
    Go to https://testng.org/doc/download.html and section “Eclipse plug-in”.
@@ -14,3 +14,8 @@ TesnNG
    Hover over “@Test” to add the TestNG library
    Hover over “@Test” to import import org.testng.annotations.Test;
    Now you get option to run the class as a testng 
+
+3. Annotations
+   a. @BeforeSuite & @AfterSuite -> Suite level method execution
+   b. @BeforeTest & @AfterTest -> Test level method execution
+   c. @BeforeMethod & @AfterMethod
