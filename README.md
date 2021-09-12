@@ -19,3 +19,4 @@ TesntNG
    a. @BeforeSuite & @AfterSuite -> Suite level method execution
    b. @BeforeTest & @AfterTest -> Test level method execution
    c. @BeforeMethod & @AfterMethod -> Class level method execution. For every method in a class, the pre/post calls can be made
+   d. @BeforeClass & @AfterClass -> Class level method execution. a call at beginning and a call at end of a class
