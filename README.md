@@ -18,4 +18,4 @@ TesntNG
 3. Annotations
    a. @BeforeSuite & @AfterSuite -> Suite level method execution
    b. @BeforeTest & @AfterTest -> Test level method execution
-   c. @BeforeMethod & @AfterMethod
+   c. @BeforeMethod & @AfterMethod -> Class level method execution. For every method in a class, the pre/post calls can be made
