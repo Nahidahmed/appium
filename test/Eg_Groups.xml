@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+  <test  name="AllTest">
+    <groups>
+    	<run>
+    		<include name="smoke"/>
+    	</run>
+    </groups>
+    <classes>
+      <class name="test.jdbasics"/>
+      <class name="test.sizebasics"/>
+    </classes>
+  </test>
+</suite> 

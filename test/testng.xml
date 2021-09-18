@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="JDTest">
+    <classes>
+      <class name="test.jdbasics">
+      	<methods>
+      		<exclude name="Demo2"/>    <!-- eg of excluding a case -->
+      		<exclude name="PassParamMethod"/>
+      	</methods>
+      </class>
+    </classes>
+  </test>
+  <test name="SizeTest">
+  	<classes>
+  		<class name="test.sizebasics">
+  			<methods>
+  				<include name="Demo2"/>              <!-- eg of including a case --> 
+  				<include name="sizemembership_.*"/>  <!-- eg of reg expression -->
+  			</methods>
+  		</class>
+  	</classes>	
+  </test> 
+</suite> 
