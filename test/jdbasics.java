@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -105,8 +106,12 @@ public class jdbasics {
 	{
 		System.out.println(usr);
 		System.out.println(pwd);
-		
+	}
 	
+	@Test
+	public void FailMethod() {
+		System.out.println("THIS IS DEMO FAIL METHOD");
+		Assert.assertTrue(false);
 	}
 
 }
